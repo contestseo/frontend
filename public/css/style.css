@@ -1047,7 +1047,7 @@ section.section-authors-books h2 {
 .faq-container {
   /* max-width: 900px; */
   margin: 0 auto;
-  padding: 2rem;
+  padding-top: 20px;
   font-family: 'Serif', sans-serif; /* Use a serif font for the title to match image */
 }
 
@@ -1061,7 +1061,7 @@ section.section-authors-books h2 {
 .faq-list {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Spacing between cards */
+  gap: 5px; /* Spacing between cards */
 }
 
 /* Card Styling */
@@ -1079,9 +1079,9 @@ section.section-authors-books h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 0px 30px;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   color: #333;
 }
@@ -1113,7 +1113,7 @@ details[open] .faq-content {
 
 .faq-answer-wrapper {
   overflow: hidden;
-  padding: 0 30px 25px 30px; /* Indented text as per image */
+  /* padding: 0 30px 25px 30px; */
 }
 
 .faq-answer {
@@ -1139,7 +1139,7 @@ details[open] .faq-content {
 /* 3. Ensure padding doesn't collapse the grid */
 .faq-answer-wrapper {
   min-height: 0; 
-  padding: 0 30px 25px 30px; /* Match the indentation in your image */
+  padding: 0 30px 10px; /* Match the indentation in your image */
 }
 
 /* 4. The Orange Pill Style from your image */
@@ -1148,6 +1148,7 @@ details[open] .faq-content {
   border-radius: 15px;
   margin-bottom: 15px;
   background-color: white;
+  padding: 12px 0;
 }
 
 .view-link {

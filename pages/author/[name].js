@@ -121,6 +121,27 @@ export default function AuthorDetail({ author, error }) {
             />
           )}
 
+          {/* FAQ SCHEMA */}
+            {author?.faq && author.faq.length > 0 && (
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": author.faq.map((item) => ({
+                      "@type": "Question",
+                      "name": item.question,
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": item.answer?.replace(/\*\*(.*?)\*\*/g, "$1") || ""
+                      }
+                    }))
+                  })
+                }}
+              />
+            )}
+
 
       </Head>
 
@@ -272,7 +293,7 @@ export default function AuthorDetail({ author, error }) {
           {(author.authorDescription || author.bio) && (
             <div id="author-bio" className="mt-5">
               <hr />
-              <h3>Author's Bio</h3>
+              <h3 className="mt-5">Author's Bio</h3>
               {/* This will render description if available, else bio */}
               <MarkdownWithToggle text={author.authorDescription || author.bio} />
             </div>
@@ -280,7 +301,8 @@ export default function AuthorDetail({ author, error }) {
 
           {author?.faq && author.faq.length > 0 && (
           <div className="faq-container">
-            <h2 className="faq-title">Frequently Asked Questions</h2>
+            <hr />
+            <h2 className="faq-title mt-5">Frequently Asked Questions</h2>
 
             <div className="faq-list">
               {author.faq.map((item, index) => (
