@@ -128,7 +128,7 @@ export default function AuthorDetail({ author, error }) {
                 dangerouslySetInnerHTML={{
                   __html: JSON.stringify({
                     "@context": "https://schema.org",
-                    "@type": "FAQ",
+                    "@type": "FAQPage",
                     "mainEntity": author.faq.map((item) => ({
                       "@type": "Question",
                       "name": item.question,
