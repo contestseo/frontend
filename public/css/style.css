@@ -2215,4 +2215,9 @@ ul.recent-posts li a {
     display: block;
 }
 .blog-detail-wrap h2{font-size:30px;margin: 40px 0px 15px;}
+
+.blog-detail-wrap h3 {
+    margin: 40px 0 15px;
+    font-size: 24px;
+}
 /********Blog css Ends*********/
