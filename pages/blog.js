@@ -50,6 +50,18 @@ export default function Blog() {
                                         </div>
                                     </div>
                                 </div>
+
+                                <div className="col-md-4">
+                                    <div className="blog-wrap">
+                                        <img src={`/images/Richard-osman.png`} />
+                                        <div className="blog-content">
+                                            <span className="blog-meta">13 Feb, 2026</span>
+                                            <h3>The Richard Osman Books That Took Over the Bestseller Lists</h3>
+                                            <p>{getLimitedText("If you’re a bibliophile with a taste for traditional “whodunnits” kinds, layered with character-driven social comedy, you’ve likely come across at least one Richard Osman book. Often positioned within the mystery genre, his fiction consistently operates on a broader emotional and structural level. He entered the publishing world with The Thursday Murder Club and became the first debutant to ever gross this quickly in terms of commercial success.")}</p>
+                                            <Link href="/blog/the-richard-osman-books-that-llok-over-the-bestseller-book" className="btn btn-outline-primary custom-primary-btn">Read More</Link>
+                                        </div>
+                                    </div>
+                                </div>
                                 {/* <div className="col-md-4">
                                     <div className="blog-wrap">
                                         <img src={`/images/about-img-2.jpg`} />
@@ -71,6 +83,7 @@ export default function Blog() {
                                 <h3>Recent posts</h3>
                                 <ul className="recent-posts">
                                     <li><Link href="/blog/detective-books">5 Best Detective Books to Read for Adults & Kids</Link></li>
+                                    <li><Link href="/blog/the-richard-osman-books-that-llok-over-the-bestseller-book">The Richard Osman Books That Took Over the Bestseller Lists</Link></li>
                                     {/* <li><Link href="">lorem ipsum sit amet</Link></li>
                                     <li><Link href="">lorem ipsum sit amet</Link></li> */}
                                 </ul>

@@ -7,6 +7,11 @@ export default function BlogDetail() {
 
    return(
      <>
+     <Head>
+        <title>Why These Richard Osman Books Became Instant Bestsellers</title>
+        <meta name="title" content="Why These Richard Osman Books Became Instant Bestsellers" />
+        <meta name="description" content="Explore Richard Osman books in order, his latest release, and what makes his crime novels so widely read." />
+      </Head>
         <Header />
         <section className="banner-inner-page people-bg">
             <div className="container">
