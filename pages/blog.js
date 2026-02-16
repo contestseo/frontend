@@ -41,7 +41,9 @@ export default function Blog() {
                             <div className="row">
                                 <div className="col-md-4">
                                     <div className="blog-wrap">
-                                        <img src={`/images/about-img-2.jpg`} />
+                                        <div className="blog-img">
+                                            <img src={`/images/about-img-2.jpg`} />
+                                        </div>
                                         <div className="blog-content">
                                             <span className="blog-meta">9 Jan, 2026</span>
                                             <h3>5 Best Detective Books to Read for Adults & Kids</h3>
@@ -53,7 +55,10 @@ export default function Blog() {
 
                                 <div className="col-md-4">
                                     <div className="blog-wrap">
-                                        <img src={`/images/Richard-osman.png`} />
+                                        <div className="blog-img">
+                                            <img src={`/images/Richard-osman.png`} />
+                                        </div>
+                                        
                                         <div className="blog-content">
                                             <span className="blog-meta">13 Feb, 2026</span>
                                             <h3>The Richard Osman Books That Took Over the Bestseller Lists</h3>

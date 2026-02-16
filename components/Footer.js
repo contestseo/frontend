@@ -124,15 +124,12 @@ export default function Footer() {
       <hr/>
       <div className="container">
         <div className="row mt-4">
-          <div className="col-sm-6 col-md-6 col-xl-6">
+          <div className="col-sm-12 col-md-6 col-xl-6">
             <span>©2026. All rights reserved by <Link href="/" className="footerLink">bookssstore.com</Link></span>
           </div>
 
-          <div className="col-sm-6 col-md-6 col-xl-6" style={{
-            display: "flex",
-            gap: "15px",
-            justifyContent: "end"
-          }}>
+          <div className="col-sm-12 col-md-6 col-xl-6 footer-flex">
+
             <Link href="/privacy-policy">Privacy Policy</Link>
             <span>|</span>
             <Link href="/affiliate-disclosure ">Affiliate Disclosure </Link>
